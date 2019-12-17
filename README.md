@@ -44,7 +44,7 @@ ubuntu@ip-$ pip3 --version
 ```
 > pip 9.0.1 from /usr/lib/python3/dist-packages (python 3.6)
 
-## Install jupyter
+## Install jupyter and run jupyter noterbook
 In this section we will install jupyter and run jupyter notebook locally on the instance. 
 
 Copy this command line:
@@ -69,7 +69,42 @@ We will see the last part of the output :
 >        http://localhost:8888/?token=d472052d79ce63cc4631e70b69d758d2c47f72f45c84348a
 >     or http://127.0.0.1:8888/?token=d472052d79ce63cc4631e70b69d758d2c47f72f45c84348a
 
-Copy the link https and paste into a browser, then replace *localhost* or *local IP address* to the public IP address of the instance
+Copy the link https and paste into a browser, then replace *localhost* or *local IP address* by the public IP address of the instance
+and jupyter notebook is loaded !
+
+**Some issues can be listed in this step :**
+    - Ctrl + C to stop the jupyter notebook (JN) and back to the terminal of ubuntu    
+    - When launch again JN, a new port can be attributed (>8888) because the previous one is still working (for some reasons). In this cas, check with command line:
+          ```
+          ubuntu@ip-$ jupyter notebook list
+          ```    
+          go to the *runtime* folder:  
+          ```
+          ubuntu@ip-$ jupyter --paths
+          ```
+          and delete all files in this folder:
+          ```
+          ubuntu@ip-$ (sudo) rm -r -f ./* 
+          ```
+          close the terminal, open it again and launch again JB
+          
+    - To run the JB in the background at the same time of the terminal, use this command:
+    
+          ```
+          ubuntu@ip-$ nohup jupyter notebook --ip=0.0.0.0
+          ```
+          then Ctrl+C to exit
+    - To create a new kernel and JN environment (in the current (virtual) environment), use these commands:
+    
+          ```
+          ubuntu@ip-$ pip3 install ipykernel
+          ```
+          ```
+          ubuntu@ip-$ python3 -m ipykernel install --user --name=nameof_new_JB_env
+          ```
+          refresh the browser to have this new JB environement
+  
+## 
 
 
 
