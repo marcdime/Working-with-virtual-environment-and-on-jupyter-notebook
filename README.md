@@ -75,7 +75,7 @@ and jupyter notebook is loaded !
   ***Some issues can be listed in this step:***
   
   - Ctrl + C to stop the jupyter notebook (JN) and back to the terminal of ubuntu      
-  - When launch again JN, a new port can be attributed (>8888) because the previous one is still working (for some reasons). In this cas, check with command line:
+  - When launch again JN, a new port can be attributed (>8888) because the previous one is still working (for some reasons). In this cas, check with this command line:
           ```
           ubuntu@ip-$ jupyter notebook list
           ```    
@@ -87,20 +87,20 @@ and jupyter notebook is loaded !
           ```
           ubuntu@ip-$ (sudo) rm -r -f ./* 
           ```
-          close the terminal, open it again and launch again JB          
+      Close the terminal, open it again and launch again JB          
   - To run the JB in the background at the same time of the terminal, use this command:    
           ```
           ubuntu@ip-$ nohup jupyter notebook --ip=0.0.0.0
           ```
-          then Ctrl+C to exit
-  - To create a new kernel and JN environment (in the current (virtual) environment), use these commands:    
+      then Ctrl+C to exit
+  - To create a new kernel and a new JN environment (in the current (virtual) environment), use these commands:    
           ```
           ubuntu@ip-$ pip3 install ipykernel
           ```
           ```
           ubuntu@ip-$ python3 -m ipykernel install --user --name=nameof_new_JB_env
           ```
-          refresh the browser to have this new JB environement
+       refresh the browser to have this new JB environment
   
 ## Create a virtual environment
 
@@ -136,8 +136,8 @@ ubuntu@ip-$ pew new myenv
 ubuntu@ip-$ pew workon myenv
 ```
 ### Using conda: we can create an environment with any python version
-  - install conda : *wget (curl) [link]*, then *$ bash [downloaded file]*
-  - initiate conda : *source ~/.bashrc* or close the terminal and open again
-  - create environment : *conda create -n myenv python=x.x*
-  - activate environment : *conda activate myenv*
-  - deactivate : *conda deactivate*
+  - install conda : ```ubuntu@ip-$ wget (curl) [link]```, then ```ubuntu@ip-$ bash [downloaded file]```
+  - initiate conda : ``` ubuntu@ip-$ source ~/.bashrc``` or close the terminal and open again
+  - create environment : ```ubuntu@ip-$ conda create -n myenv python=x.x```
+  - activate environment : ```ubuntu@ip-$ conda activate myenv```
+  - deactivate : ```ubuntu@ip-$ conda deactivate```
