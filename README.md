@@ -104,7 +104,8 @@ and jupyter notebook is loaded !
   
 ## Create a virtual environment
 
-### Using the package *venv* shipped in python3. In Ubuntu, we have to install *venv* : 
+### Using the package *venv* shipped in python3 : 
+  - In Ubuntu, we have to install *venv* :
 ```
 ubuntu@ip-$ sudo apt-get install python3-venv
 ```
