@@ -72,9 +72,10 @@ We will see the last part of the output :
 Copy the link https and paste into a browser, then replace *localhost* or *local IP address* by the public IP address of the instance
 and jupyter notebook is loaded !
 
-***Some issues can be listed in this step:***
-    - Ctrl + C to stop the jupyter notebook (JN) and back to the terminal of ubuntu      
-    - When launch again JN, a new port can be attributed (>8888) because the previous one is still working (for some reasons). In this cas, check with command line:
+  ***Some issues can be listed in this step:***
+  
+  - Ctrl + C to stop the jupyter notebook (JN) and back to the terminal of ubuntu      
+  - When launch again JN, a new port can be attributed (>8888) because the previous one is still working (for some reasons). In this cas, check with command line:
           ```
           ubuntu@ip-$ jupyter notebook list
           ```    
@@ -87,12 +88,12 @@ and jupyter notebook is loaded !
           ubuntu@ip-$ (sudo) rm -r -f ./* 
           ```
           close the terminal, open it again and launch again JB          
-    - To run the JB in the background at the same time of the terminal, use this command:    
+  - To run the JB in the background at the same time of the terminal, use this command:    
           ```
           ubuntu@ip-$ nohup jupyter notebook --ip=0.0.0.0
           ```
           then Ctrl+C to exit
-    - To create a new kernel and JN environment (in the current (virtual) environment), use these commands:    
+  - To create a new kernel and JN environment (in the current (virtual) environment), use these commands:    
           ```
           ubuntu@ip-$ pip3 install ipykernel
           ```
@@ -103,7 +104,7 @@ and jupyter notebook is loaded !
   
 ## Create a virtual environment
 
-- Using the package *venv* shipped in python3. In Ubuntu, we have to install *venv* : 
+### Using the package *venv* shipped in python3. In Ubuntu, we have to install *venv* : 
 ```
 ubuntu@ip-$ sudo apt-get install python3-venv
 ```
@@ -118,7 +119,7 @@ ubuntu@ip-$ source myenv/bin/activate
 ```
 > (myenv) ubuntu@ip-:~$
 
-- Using *pew* package :
+### Using *pew* package :
 ```
 ubuntu@ip-$ pip3 install pew                                        # pew is in /.local/bin
 ```
@@ -134,7 +135,7 @@ ubuntu@ip-$ pew new myenv
 ```
 ubuntu@ip-$ pew workon myenv
 ```
-- Using conda: we can create an environment with any python version
+### Using conda: we can create an environment with any python version
   - install conda : *wget (curl) [link]*, then *$ bash [downloaded file]*
   - initiate conda : *source ~/.bashrc* or close the terminal and open again
   - create environment : *conda create -n myenv python=x.x*
