@@ -58,18 +58,18 @@ Launch jupyter :
 ```
 ubuntu@ip-$ jupyter notebook --ip=0.0.0.0
 ```
+option **--ip** is important to get access to the localhost of the instant
 
-** option --ip is important to get access to the localhost of the instant **
 
 We will see the last part of the output : 
+
 >     To access the notebook, open this file in a browser:
-        file:///home/ubuntu/.local/share/jupyter/runtime/nbserver-7752-open.html
-    Or copy and paste one of these URLs:
-        http://localhost:8888/?token=d472052d79ce63cc4631e70b69d758d2c47f72f45c84348a
-     or http://127.0.0.1:8888/?token=d472052d79ce63cc4631e70b69d758d2c47f72f45c84348a
+>        file:///home/ubuntu/.local/share/jupyter/runtime/nbserver-7752-open.html
+>    Or copy and paste one of these URLs:
+>        http://localhost:8888/?token=d472052d79ce63cc4631e70b69d758d2c47f72f45c84348a
+>     or http://127.0.0.1:8888/?token=d472052d79ce63cc4631e70b69d758d2c47f72f45c84348a
 
-
-Copy the link https and paste into a browser, then replace *localhost* or *local ip address* to the public ip address of the instance
+Copy the link https and paste into a browser, then replace *localhost* or *local IP address* to the public IP address of the instance
 
 
 
