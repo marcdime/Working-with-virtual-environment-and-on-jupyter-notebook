@@ -65,15 +65,17 @@ We will see the last part of the output :
 
 >     To access the notebook, open this file in a browser:
 >        file:///home/ubuntu/.local/share/jupyter/runtime/nbserver-7752-open.html
->    Or copy and paste one of these URLs:
+>     Or copy and paste one of these URLs:
 >        http://localhost:8888/?token=d472052d79ce63cc4631e70b69d758d2c47f72f45c84348a
 >     or http://127.0.0.1:8888/?token=d472052d79ce63cc4631e70b69d758d2c47f72f45c84348a
 
 Copy the link https and paste into a browser, then replace *localhost* or *local IP address* by the public IP address of the instance
 and jupyter notebook is loaded !
 
-**Some issues can be listed in this step :**
-    - Ctrl + C to stop the jupyter notebook (JN) and back to the terminal of ubuntu    
+***Some issues can be listed in this step:***
+
+    - Ctrl + C to stop the jupyter notebook (JN) and back to the terminal of ubuntu  
+    
     - When launch again JN, a new port can be attributed (>8888) because the previous one is still working (for some reasons). In this cas, check with command line:
           ```
           ubuntu@ip-$ jupyter notebook list
@@ -104,7 +106,6 @@ and jupyter notebook is loaded !
           ```
           refresh the browser to have this new JB environement
   
-## 
 
 
 
